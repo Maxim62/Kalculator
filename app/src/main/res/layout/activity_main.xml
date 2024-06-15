@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/id_vydano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:digits="0123456789"
+            android:hint="Введите количество полученных б/п"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="5"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/id_ostatok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:inputType="number"
+            android:maxLength="5"
+            android:digits="0123456789"
+            android:hint="Введите остаток"
+            android:imeOptions="actionDone"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/id_obuchaemyh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:inputType="number"
+            android:maxLength="5"
+            android:digits="0123456789"
+            android:hint="Введите количество обучающихся"
+            android:imeOptions="actionDone"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/id_uprazhneniye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:inputType="number"
+            android:maxLength="5"
+            android:digits="0123456789"
+            android:hint="Введите количество б/п в упражнении"
+            android:imeOptions="actionDone"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/id_vsego"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text=" "
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/id_pervaya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text=" "
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/id_vtoraya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text=" "
+            android:layout_marginBottom="10dp"/>
+
+
+        <Button
+            android:id="@+id/id_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="onMyButtonClick"
+            android:text="Рассчитать"
+            android:textSize="20dp"
+            tools:ignore="MissingConstraints"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/id_button_sbros"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="onClick"
+            android:text="Cброс"
+            android:textSize="20dp"
+            tools:ignore="MissingConstraints"/>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
