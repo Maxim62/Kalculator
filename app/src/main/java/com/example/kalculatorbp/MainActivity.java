@@ -75,8 +75,8 @@ public class MainActivity extends AppCompatActivity {
         int kol_vypolnen_uprazh = izrashodovano / patron_uprazh;
         if(izrashodovano % patron_uprazh !=0){
             textViewPervaya.setText("Введены неверные данные!");
-            textViewVtoraya.setText("Введены неверные данные!");
-            textViewVsego.setText("Введены неверные данные!");
+            textViewVtoraya.setText("Введены неверные данные! ");
+            textViewVsego.setText("Введены неверные данные! ");
         }
 
         int poln_vypoln = kol_vypolnen_uprazh / obuchaysh;
@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
         }
         
         if (ostatok == 0){
-            Toast toast = Toast.makeText(this, "Славная была охота!",Toast.LENGTH_LONG);
+            Toast toast = Toast.makeText(this, "Славная была охота  !",Toast.LENGTH_LONG);
             toast.show();
         }
     }
