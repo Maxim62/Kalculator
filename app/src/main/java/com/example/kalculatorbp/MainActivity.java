@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
         }
         
         if (ostatok == 0){
-            Toast toast = Toast.makeText(this, "Славная была охота  !",Toast.LENGTH_LONG);
+            Toast toast = Toast.makeText(this, "Славная была охота!",Toast.LENGTH_LONG);
             toast.show();
         }
     }
