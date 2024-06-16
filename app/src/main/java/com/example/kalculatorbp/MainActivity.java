@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText editText2;
     private EditText editText3;
     private EditText editText4;
+    private int num = 0;
     String textPoluch;
     String textOstatok;
     String textObuchaysh;
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onMyButtonClick(View view) {
+        num = 0;
         textPoluch = editText1.getText().toString();
         textOstatok = editText2.getText().toString();
         textObuchaysh = editText3.getText().toString();
@@ -125,6 +127,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
+        num += 1;
+        if (num == 15){
+            Toast toast = Toast.makeText(this, "Да сброшено уже всё!",Toast.LENGTH_LONG);
+            toast.show();
+        }
         editText1.getText().clear();
         editText2.getText().clear();
         editText3.getText().clear();
